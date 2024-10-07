@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    
+    "module": "commonjs",
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+
+    "outDir": "dist",
+    "rootDir": "..",
+    "sourceRoot": ".",
+    "sourceMap": true,
+
+    "useDefineForClassFields": true,
+
+    // Bundling
+    // "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "resolveJsonModule": true, // currently unused
+
+    // Paths
+    "paths": {
+      "assets/*": ["./assets/*"],
+    },
+
+    // Lint
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
